@@ -21,4 +21,10 @@ body {
 .hero-intro {
   grid-area: hero;
   width: 100%;
+  color: #3d3d3d;
+  font-size: 96px;
+}
+
+span {
+  color: white;
 }
