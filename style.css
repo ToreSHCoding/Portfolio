@@ -20,11 +20,25 @@ body {
 
 .hero-intro {
   grid-area: hero;
-  width: 100%;
+  width: 70%;
   color: #3d3d3d;
-  font-size: 96px;
+  font-size: 100px;
+  margin-top: 3em;
+  position: relative;
+  float: left;
 }
 
 span {
   color: white;
+}
+
+.dark-purple-curve {
+  background-image: url(images/dark-purpl.svg);
+  height: 300px;
+  width: 100%;
+  margin-top: -5px;
+}
+
+.light-purple {
+  background-image: url(images/light-purpl.svg);
 }
