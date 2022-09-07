@@ -1,0 +1,42 @@
+body {
+  margin: 0 auto;
+}
+
+#hero {
+  background-color: #371B58;
+  height: 100vh;
+  margin-top: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-areas: ". hero hero hero hero hero . . . .";
+  gap: 20px;
+}
+
+#hero h1 {
+  grid-area: hero;
+  color: white;
+  font-family: 'inter';
+  font-size: 96px;
+}
+
+#hero span {
+  font-family: 'inter-bold';
+  background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(236,255,215,1) 37%, rgba(255,201,251,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@font-face {
+  font-family: 'inter';
+  src: url(/PORTFOLIO/fonts/inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+  font-family: 'inter-bold';
+  src: url(/PORTFOLIO/fonts/inter/static/Inter-Black.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
