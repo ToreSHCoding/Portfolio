@@ -11,15 +11,19 @@ body {
 .grid {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-areas: ". hero hero hero hero hero . . . .";
+  grid-template-areas: ". hero hero hero hero hero light light light light";
   gap: 20px;
 }
 
 #hero h1 {
   grid-area: hero;
+  grid-row: 1;
   color: white;
   font-family: 'inter';
   font-size: 96px;
+  width: 80%;
+  position: relative;
+  z-index: 2;
 }
 
 #hero span {
@@ -27,6 +31,14 @@ body {
   background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(236,255,215,1) 37%, rgba(255,201,251,1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+#light-purple {
+  background-color: #4C3575;
+  grid-row: 1;
+  grid-column-start: 5;
+  grid-column-end: 11;
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 @font-face {
