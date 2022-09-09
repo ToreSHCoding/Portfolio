@@ -21,9 +21,10 @@ body {
   color: white;
   font-family: 'inter';
   font-size: 96px;
-  width: 80%;
+  width: 75%;
   position: relative;
   z-index: 2;
+  margin-top: 3.5em;
 }
 
 #hero span {
