@@ -6,6 +6,7 @@ body {
   background-color: #371B58;
   height: 100vh;
   margin-top: 0;
+  overflow: auto;
 }
 
 .grid {
@@ -40,6 +41,7 @@ body {
   color: #AFD926;
   border: 3px solid #AFD926;
   border-radius: 10px;
+  cursor: pointer;
   transition: .2s;
 }
 
