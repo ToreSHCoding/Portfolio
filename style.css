@@ -4,25 +4,35 @@ body {
 
 .container {
   display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0 auto;
+  grid-area: light;
+  position: relative;
+  z-index: 3;
 }
 
 nav ul {
   display: flex;
+  font-family: 'inter';
 }
 
 nav li {
+  font-size: 2rem;
   list-style: none;
+  margin: .5em 1em;
 }
 
 nav a {
   text-decoration: none;
+  color: white;
 }
 
 #hero {
   background-color: #371B58;
   height: 100vh;
   margin-top: 0;
-  overflow: auto;
+  overflow: auto; 
 }
 
 .grid {
@@ -40,7 +50,7 @@ nav a {
 #hero h1 {
   color: white;
   font-family: 'inter';
-  font-size: 96px;
+  font-size: 100px;
   width: 75%;
   position: relative;
   z-index: 2;
@@ -69,7 +79,7 @@ nav a {
 
 #hero span {
   font-family: 'inter-bold';
-  font-size: 1.2em;
+  font-size: 1.1em;
   background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(236,255,215,1) 37%, rgba(255,201,251,1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -94,4 +104,10 @@ nav a {
   src: url(/PORTFOLIO/fonts/inter/static/Inter-Black.ttf);
   font-weight: bold;
   font-style: normal;
+}
+
+@media screen and (max-width: 1250px){
+  #hero-btn {
+    margin-bottom: 1em;
+  }
 }
