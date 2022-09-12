@@ -2,6 +2,22 @@ body {
   margin: 0 auto;
 }
 
+.container {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
 #hero {
   background-color: #371B58;
   height: 100vh;
@@ -25,7 +41,7 @@ body {
   color: white;
   font-family: 'inter';
   font-size: 96px;
-  width: 80%;
+  width: 75%;
   position: relative;
   z-index: 2;
   margin-top: 3em;
@@ -60,11 +76,12 @@ body {
 }
 
 #light-purple {
+  position: relative;
   background-color: #4C3575;
   grid-row: 1;
   grid-column-start: 5;
   grid-column-end: 11;
-  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(400px 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 @font-face {
