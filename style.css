@@ -33,7 +33,7 @@ body {
 
 #hero-btn {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   padding: 1rem;
   font-size: 64px;
   font-family: 'inter-bold';
@@ -53,6 +53,7 @@ body {
 
 #hero span {
   font-family: 'inter-bold';
+  font-size: 1.2em;
   background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(236,255,215,1) 37%, rgba(255,201,251,1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
