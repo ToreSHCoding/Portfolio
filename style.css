@@ -8,7 +8,7 @@
 body {
   margin: 0 auto;
   padding: 0;
-  background: linear-gradient(110deg, #371B58 50%, #4C3575 50%);
+  background: linear-gradient(110deg, var(--dark-purple) 50%, var(--mid-purple) 50%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: 'inter';
@@ -61,7 +61,7 @@ header {
 }
 
 .nav-links a:hover {
-  color: #AFD926;
+  color: var(--theme-green);
 }
 
 .toggle-btn {
@@ -123,17 +123,17 @@ header {
   font-size: 64px;
   font-family: 'inter-bold';
   background-color: transparent;
-  color: #AFD926;
-  border: 3px solid #AFD926;
+  color: var(--theme-green);
+  border: 3px solid var(--theme-green);
   border-radius: 10px;
   cursor: pointer;
   transition: .2s;
 }
 
 #hero-btn:hover {
-  background-color: #AFD926;
-  border: 3px solid #4C3575;
-  color: #371B58;
+  background-color: var(--theme-green);
+  border: 3px solid var(--mid-purple);
+  color: var(--dark-purple);
 }
 
 #hero span {
