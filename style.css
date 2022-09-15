@@ -3,10 +3,9 @@ body {
   background: linear-gradient(110deg, #371B58 50%, #4C3575 50%);
 }
 
-.container {
-  /* min-width: 100%; */
+/* .container {
   margin: 0 auto;
-}
+} */
 
 nav ul {
   display: flex;
@@ -57,7 +56,7 @@ nav a {
   font-family: 'inter';
   font-size: 100px;
   margin-top: 3em;
-  width: 65%;
+  width: 45%;
 }
 
 #hero-btn {
