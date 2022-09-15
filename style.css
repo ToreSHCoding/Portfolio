@@ -1,27 +1,85 @@
+:root {
+  --dark-purple: #371B58;
+  --mid-purple: #4C3575;
+  --light-purple: #7858A6;
+  --theme-green: #AFD926;
+}
+
 body {
   margin: 0 auto;
+  padding: 0;
   background: linear-gradient(110deg, #371B58 50%, #4C3575 50%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'inter';
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /* .container {
   margin: 0 auto;
 } */
 
-nav ul {
+header {
+  top: 0;
+}
+
+.navbar {
   display: flex;
-  font-family: 'inter';
-  justify-content: end;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav li {
-  font-size: 2rem;
+.brand-name {
+  font-size: 1.5rem;
+  margin: .5rem;
+  color: white;
+}
+
+.nav-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
   list-style: none;
-  margin: .5em 1em;
 }
 
-nav a {
+.nav-links li a {
   text-decoration: none;
   color: white;
+  padding: 1rem;
+  display: block;
+  height: 100%;
+}
+
+.nav-links li:hover {
+  background-color:  hsla(0, 0%, 100%, 0.2);
+}
+
+.nav-links a:hover {
+  color: #AFD926;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-btn .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
 }
 
 #hero {
@@ -60,6 +118,7 @@ nav a {
 }
 
 #hero-btn {
+  margin-bottom: 2em;
   padding: 1rem;
   font-size: 64px;
   font-family: 'inter-bold';
@@ -108,8 +167,18 @@ nav a {
   font-style: normal;
 }
 
-@media screen and (max-width: 1250px){
-  #hero-btn {
-    margin-bottom: 1em;
+@media screen and (max-width: 1360px){
+
+}
+
+@media screen and (max-width: 400px) {
+  .toggle-btn {
+    display: flex;
   }
+
+  .nav-links {
+    display: none;
+  }
+
+
 }
