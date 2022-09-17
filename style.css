@@ -98,7 +98,36 @@ header {
 
 #hero {
   display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+  height: 100vh;
+}
 
+.hero__left {
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.left__intro {
+  font-size: 3rem;
+  margin: 3em 1em;
+  margin-bottom: 1em;
+  color: white;
+  font-family: 'inter-thin';
+}
+
+.left__intro span {
+  font-size: 3.5rem;
+  font-family: 'inter-bold';
+}
+
+.left__btn {
+
+}
+
+.hero__right {
+  display: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -147,6 +176,11 @@ header {
 }
 
 @font-face {
+  font-family: 'inter-thin';
+  src: url(/PORTFOLIO/fonts/inter/static/Inter-Light.ttf);
+}
+
+@font-face {
   font-family: 'inter';
   src: url(/PORTFOLIO/fonts/inter/Inter-VariableFont_slnt\,wght.ttf);
 }
@@ -157,3 +191,4 @@ header {
   font-weight: bold;
   font-style: normal;
 }
+
