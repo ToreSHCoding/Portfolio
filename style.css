@@ -119,8 +119,15 @@ header {
   font-family: 'inter-thin';
 }
 
+/* .left__intro-1 {
+  font-size: 3rem;
+  margin-top: 1px;
+  margin-bottom: 1em;
+  color: white;
+  font-family: 'inter-thin';
+} */
+
 .left__intro span {
-  font-size: 3.5rem;
   font-family: 'inter-bold';
   background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(236,255,215,1) 37%, rgba(255,201,251,1) 100%);
   -webkit-background-clip: text;
@@ -149,7 +156,7 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .toggle-btn {
     display: flex;
   }
@@ -192,7 +199,42 @@ header {
   .nav-links.active {
     display: flex;
   }
+
 }
+
+
+@media screen and (min-width: 700px) and (orientation: landscape) {
+  .left__intro {
+    margin: .5em 1.2em;
+    margin-top: 1em;
+    font-size: 3rem;
+  }
+}
+
+
+
+/* @media screen and (min-width: 750px) {
+  .left__intro {
+    margin: 1em 1.5em;
+    margin-top: 6em;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .left__intro {
+    margin: 1em 1.5em;
+    margin-top: 5.5em;
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .left__intro {
+    margin: .6em 2em;
+    margin-top: 4em;
+    font-size: 4rem;
+  }
+} */
 
 @font-face {
   font-family: 'inter-thin';
