@@ -5,6 +5,10 @@
   --theme-green: #AFD926;
 }
 
+html, body {
+  /* overflow-x: hidden; */
+}
+
 body {
   margin: 0 auto;
   padding: 0;
@@ -194,8 +198,77 @@ header {
 }
 
 /* ============= ABOUT SECTION ============== */
+#about {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+}
 
+.about__title {
+  width: 100%;
+  background-color: var(--theme-green);
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'inter-thick';
+  padding: .2em 0;
+  margin-bottom: 0;
+}
 
+.about__bio {
+  order: 1;
+  background-color: rgba(0, 0, 0, .5);
+  color: white;
+  font-size: 1.8rem;
+  padding: 0 1em;
+}
+
+.about__skills {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.skills__title {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 0;
+}
+
+.about__skills hr {
+  background-color: white;
+  border-radius: 5px;
+  width: 200px;
+  height: 3px;
+  margin-bottom: 3em;
+}
+
+.skills__icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.skills__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  fill: white;
+  margin: 1em;
+  margin-top: 0;
+}
+
+.skills__icon svg {
+  width: 80px;
+  height: 80px;
+}
+
+.icon__name {
+  color: white;
+  font-size: 1.2em;
+}
 
 /* ============= PROJECTS SECTION ============== */
 
@@ -261,6 +334,27 @@ header {
     margin-top: 1em;
     font-size: 3rem;
   }
+}
+
+@media screen and (max-width: 320px) {
+  .left__intro {
+    font-size: 2rem;
+  }
+
+  .left__btn {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .skills__icons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
 
 @media screen and (min-width: 400px) {
@@ -433,6 +527,11 @@ header {
 @font-face {
   font-family: 'inter';
   src: url(/PORTFOLIO/fonts/inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+  font-family: 'inter-thick';
+  src: url(/PORTFOLIO/fonts/inter/static/Inter-Bold.ttf);
 }
 
 @font-face {
