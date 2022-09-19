@@ -6,7 +6,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   background: linear-gradient(110deg, var(--dark-purple) 40%, var(--mid-purple) 70%);
   background-repeat: no-repeat;
@@ -114,6 +114,7 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
+  min-height: 1000px;
 }
 
 .left__intro {
@@ -174,13 +175,22 @@ header {
 
 .right__btn-container a {
   border-radius: 10px;
-  margin: .5em .5em;
   transition: .2s;
   cursor: pointer;
 }
 
 .right__btn-container a:hover {
   background-color:  hsla(0, 0%, 100%, 0.2);
+}
+
+.right__btn-container a svg {
+  margin: .5em 0;
+  padding: .5em;
+  fill: white;
+}
+
+.right__btn-container a svg:hover {
+  fill: var(--theme-green);
 }
 
 /* ============= ABOUT SECTION ============== */
@@ -220,7 +230,7 @@ header {
 
   .nav-links li {
     text-align: end;
-    min-width: 600px;
+    min-width: 1000px;
   }
 
   .nav-links li a {
@@ -293,7 +303,7 @@ header {
 
 }
 
-@media  screen and (min-width: 1200px) {
+@media  screen and (min-width: 1180px) {
   #hero {
     flex-direction: row;
   }
@@ -302,6 +312,93 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .left__intro {
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .left__intro {
+    font-size: 6em;
+    margin-bottom: 1em;
+  }
+
+  .left__btn {
+    font-size: 3.5em;
+  }
+
+  .right__btn-container {
+    margin-bottom: 10em;
+    height: 200px;
+    margin-right: 4em;
+  }
+  
+  .right__btn-container a svg {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .left__intro {
+    margin-left: 15rem;
+  }
+
+  .left__btn {
+    margin-left: 15rem;
+  }
+}
+
+@media screen and (min-width: 1735px) {
+  .left__intro {
+    font-size: 7em;
+    width: 70%;
+  }
+
+  .left__btn {
+    font-size: 4em;
+  }
+}
+
+@media screen and (min-width: 1790px) {
+  .left__intro {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1790px) {
+  .left__intro {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .left__intro {
+    width: 70%;
+    font-size: 8em;
+  }
+
+  .left__btn {
+    font-size: 5em;
+  }
+
+  .right__btn-container {
+    margin-bottom: 15em;
+  }
+}
+
+@media screen and (min-width: 2100px) {
+  .left__intro {
+    width: 65%;
+    margin-bottom: .8em;
+  }
+}
+
+@media screen and (min-width: 2400px) and (max-width: 3300px) {
+  .left__intro {
+    width: 55%;
   }
 }
 
