@@ -437,7 +437,7 @@ header {
   }
 
   #about {
-    padding-top: 1.5em;
+    padding-top: 1.2em;
   }
 
   .about__title {
@@ -500,7 +500,33 @@ header {
     margin-bottom: 1em;
   }
 
+  .about__title {
+    font-size: 4rem;
+  }
 
+  .bio__details {
+    font-size: 2rem;
+  }
+
+  .skills__title {
+    font-size: 3.5rem;
+  }
+
+  .skills__icon svg {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .icon__name {
+    font-size: 1.8rem;
+  }
+
+}
+
+@media screen and (max-width: 1400px) {
+  .about__skills {
+    padding-bottom: 1em;
+  }
 }
 
 @media screen and (min-width: 1400px) {
