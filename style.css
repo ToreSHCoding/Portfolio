@@ -207,12 +207,39 @@ header {
 .about__title {
   width: 100%;
   background-color: var(--theme-green);
+  color: var(--dark-purple);
   font-size: 3rem;
   text-align: center;
   font-family: 'inter-thick';
   padding: .2em 0;
   margin-bottom: 0;
 }
+
+.bio__desktop-container {
+  display: none;
+  background-color: var(--theme-green);
+  color: var(--dark-purple);
+  font-family: 'inter-thick';
+  margin-top: 0;
+  margin-right: -3em;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 100px 100%);
+  position: relative;
+  z-index: -1;
+}
+
+/* .bio__desktop-title {
+  display: none;
+  background-color: var(--theme-green);
+  color: var(--dark-purple);
+  font-family: 'inter-thick';
+  font-size: 3rem;
+  margin-top: 0;
+  margin-right: -3em;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 100px 100%);
+  padding: .5em 0;
+  position: relative;
+  z-index: -1;
+} */
 
 .about__bio {
   order: 1;
@@ -336,6 +363,14 @@ header {
   }
 }
 
+@media screen and (max-width: 250px) {
+  .skills__icons {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
 @media screen and (max-width: 320px) {
   .left__intro {
     font-size: 2rem;
@@ -351,15 +386,44 @@ header {
     overflow-x: hidden;
   }
 
+  #about {
+    padding-top: 1em;
+  }
+
   .skills__icons {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .about__title {
+    font-size: 2.5rem;
+  }
+
+  .about__bio {
+    font-size: 1.3rem;
+  }
+
+  .skills__title {
+    font-size: 2.5rem;
+  }
+
 
 }
 
 @media screen and (min-width: 400px) {
   .left__intro {
     font-size: 3em;
+  }
+
+  .about__title {
+    font-size: 2.6rem;
+  }
+
+  .about__bio {
+    font-size: 1.4rem;
+  }
+
+  .skills__title {
+    font-size: 2.6rem;
   }
 }
 
@@ -370,6 +434,26 @@ header {
 
   .left__btn {
     font-size: 2.5em;
+  }
+
+  #about {
+    padding-top: 1.5em;
+  }
+
+  .about__title {
+    font-size: 3rem;
+  }
+
+  .about__bio {
+    font-size: 1.6rem;
+  }
+
+  .skills__title {
+    font-size: 3rem;
+  }
+
+  .icon__name {
+    font-size: 1.6rem;
   }
 }
 
@@ -398,6 +482,10 @@ header {
 }
 
 @media  screen and (min-width: 1180px) {
+  body {
+    overflow-x: hidden;
+  }
+
   #hero {
     flex-direction: row;
   }
@@ -411,6 +499,8 @@ header {
   .left__intro {
     margin-bottom: 1em;
   }
+
+
 }
 
 @media screen and (min-width: 1400px) {
@@ -433,6 +523,77 @@ header {
     width: 80px;
     height: 80px;
   }
+
+  /* .bio__details {
+    font-size: 1.8rem;
+  } */
+
+  #about {
+    flex-direction: row;
+    margin: 0 2em;
+    padding-top: 5em;
+  }
+
+  .bio__desktop-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100px;
+  }
+
+  .bio__desktop-title {
+    font-size: 4.5rem;
+  }
+
+  .about__title {
+    display: none;
+  }
+
+  .about__bio {
+    order: 2;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    padding-right: 0;
+  }
+
+  .bio__p-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    height: 550px;
+  }
+
+  .bio__details {
+    font-size: 2rem;
+  }
+
+  .about__skills {
+    border-radius: 10px;
+    width: 40%;
+  }
+
+  .bio__p-container {
+    height: 700px;
+  }
+
+  .skills__title {
+    font-size: 3.5rem;
+  }
+
+  .skills__icon svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .icon__name {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (min-width: 1500px) {
@@ -443,6 +604,7 @@ header {
   .left__btn {
     margin-left: 15rem;
   }
+
 }
 
 @media screen and (min-width: 1735px) {
@@ -454,6 +616,28 @@ header {
   .left__btn {
     font-size: 4em;
   }
+
+  .bio__p-container {
+    min-height: 670px;
+  }
+
+  .bio__details {
+    font-size: 2rem;
+  }
+
+  .skills__title {
+    font-size: 3.5rem;
+  }
+
+  .skills__icon svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .icon__name {
+    font-size: 2rem;
+  }
+  
 }
 
 @media screen and (min-width: 1790px) {
@@ -487,6 +671,36 @@ header {
   .left__intro {
     width: 65%;
     margin-bottom: .8em;
+  }
+
+  #about {
+    margin: 0 3em;
+    padding-top: 5em;
+  }
+
+  .bio__desktop-title {
+    font-size: 6rem;
+  }
+
+  .bio__p-container {
+    height: 1050px;
+  }
+
+  .bio__details {
+    font-size: 3rem;
+  }
+
+  .skills__title {
+    font-size: 4.5rem;
+  }
+
+  .skills__icon svg {
+    width: 170px;
+    height: 170px;
+  }
+
+  .icon__name {
+    font-size: 3rem;
   }
 }
 
