@@ -298,7 +298,16 @@ header {
 }
 
 /* ============= PROJECTS SECTION ============== */
-
+.projects__title {
+  width: 100%;
+  background-color: var(--theme-green);
+  color: var(--dark-purple);
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'inter-thick';
+  padding: .2em 0;
+  margin-bottom: 0;
+}
 
 
 /* ============= CONTACT SECTION ============== */
