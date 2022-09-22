@@ -208,7 +208,7 @@ header {
   width: 100%;
   background-color: var(--theme-green);
   color: var(--dark-purple);
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   font-family: 'inter-thick';
   padding: .2em 0;
@@ -298,15 +298,77 @@ header {
 }
 
 /* ============= PROJECTS SECTION ============== */
+#projects {
+  padding-top: 1.5em;
+  margin-top: -3em;
+}
+
 .projects__title {
   width: 100%;
   background-color: var(--theme-green);
   color: var(--dark-purple);
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   font-family: 'inter-thick';
   padding: .2em 0;
   margin-bottom: 0;
+}
+
+.projects__container {
+  background-color: rgba(0, 0, 0, .3);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+}
+
+.container__panel {
+  margin-bottom: 2em;
+}
+
+.panel__title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.panel__info {
+  font-size: 1.3rem;
+}
+
+.panel__demo {
+  font-size: 1.3rem;
+  text-decoration: none;
+  background-color: var(--theme-green);
+  border: 2px solid var(--light-purple);
+  color: var(--dark-purple);
+  padding: .2em .4em;
+  border-radius: 5px;
+}
+
+.panel__source {
+  font-size: 1.3rem;
+  text-decoration: none;
+  border: 2px solid var(--theme-green);
+  color: var(--theme-green);
+  padding: .2em .4em;
+  border-radius: 5px;
+}
+
+.panel__img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.panel__tags {
+  display: flex;
+}
+
+.panel__tag {
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: .2em .5em;
+  border-radius: 5px;
+  margin: 1em .5em;
 }
 
 
@@ -434,6 +496,30 @@ header {
   .skills__title {
     font-size: 2.6rem;
   }
+
+  .projects__title {
+    font-size: 2.6rem;
+  }
+
+  .panel__title {
+    font-size: 2rem;
+  }
+
+  .panel__info {
+    font-size: 1.4rem;
+  }
+
+  .panel__demo {
+    font-size: 1.4rem;
+  }
+
+  .panel__source {
+    font-size: 1.4rem;
+  }
+
+  .panel__tag {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -463,6 +549,30 @@ header {
 
   .icon__name {
     font-size: 1.6rem;
+  }
+
+  .projects__title {
+    font-size: 3rem;
+  }
+
+  .panel__title {
+    font-size: 2.2rem;
+  }
+
+  .panel__info {
+    font-size: 1.6rem;
+  }
+
+  .panel__demo {
+    font-size: 1.6rem;
+  }
+
+  .panel__source {
+    font-size: 1.6rem;
+  }
+
+  .panel__tag {
+    font-size: 1.8rem;
   }
 }
 
@@ -628,6 +738,10 @@ header {
 
   .icon__name {
     font-size: 2rem;
+  }
+
+  .projects__title {
+    clip-path: polygon(0 0, 100% 0, 100px 100%, 0 100%);
   }
 }
 
