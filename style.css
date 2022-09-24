@@ -227,20 +227,6 @@ header {
   z-index: -1;
 }
 
-/* .bio__desktop-title {
-  display: none;
-  background-color: var(--theme-green);
-  color: var(--dark-purple);
-  font-family: 'inter-thick';
-  font-size: 3rem;
-  margin-top: 0;
-  margin-right: -3em;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 100px 100%);
-  padding: .5em 0;
-  position: relative;
-  z-index: -1;
-} */
-
 .about__bio {
   order: 1;
   background-color: rgba(0, 0, 0, .5);
@@ -740,9 +726,22 @@ header {
     font-size: 2rem;
   }
 
-  .projects__title {
-    clip-path: polygon(0 0, 100% 0, 100px 100%, 0 100%);
+
+
+  .projects__desktop-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: -700px; */
+    /* clip-path: polygon(0 0, 100% 0, -100px 100%, 0 100%); */
+    position: relative;
+    z-index: -1;
   }
+
+  .projects__title {
+    font-size: 4.5rem;
+  }
+
 }
 
 @media screen and (min-width: 1500px) {
