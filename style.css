@@ -154,6 +154,7 @@ header {
   padding: .3em .4em;
   cursor: pointer;
   transition: .2s;
+  text-decoration: none;
 }
 
 .left__btn:hover {
